@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+        <defs>
+            <linearGradient id="Gradient1" x1="25%" y1="7%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C0C0C0" ></stop>
+                <stop offset="40%" stop-color="gray"></stop>
+                <stop offset="60%" stop-color="gray"></stop>
+                <stop offset="100%" stop-color="#C0C0C0"></stop>
+            </linearGradient>
+        </defs>
+          <defs>
+      <linearGradient id="gradBall" x1="10" y1="15" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="##C0C0C0" ></stop>
+            <stop offset="60%" stop-color="#C0C0C0"></stop>
+            <stop offset="100%" stop-color="#C0C0C0"></stop>
+        </linearGradient>
+        </defs>
+        <defs>
+            <pattern id="basicPattern" x="10" y="15"  width="31" height="31" patternUnits="userSpaceOnUse">
+                <circle cx="7" cy="21" r="7" fill= "#gradBall" stroke="#000"  ></circle>
+                <circle cx="21" cy="7" r="7" fill= "#gradBall" stroke="#000" ></circle>
+            </pattern>
+        </defs>
+
+
+
+        <rect width="490" height="490"  rx="10" fill="url(#Gradient1)" stroke="black" stroke-width="1"></rect>
+        <text x="25%" y="7%" text-anchor="middle"  font-family="Arial, sans-serif" font-weight="bold"
+             font-size="24" fill="url(#Gradient1)"  stroke="black" stroke-width="1">HOME WORK</text>
+
+
+        <rect width="390" height="390"  rx="10" x="50" y="50"  stroke="black" stroke-width="1" fill="url(#basicPattern)"></rect>
+        <path d="M100,100 h300  v230 h-110 v20 h70 v20 h-220 v-20 h70 v-20 h-110  Z" stroke="black" stroke-width="1" fill="url(#Gradient1)" ></path>
+        <rect width="250" height="180" rx="10" x="125" y="125"></rect>
+        <!--<path d="M600,200 a255,200 0 1 0 50,100" style="fill:white;"></path>-->
+        <defs>
+
+            <path id="textpath" fill="none"  d="M200.400,0.024c0,0,10.99,51.603,102.248,51.603c91.259"></path>
+
+        </defs>
+        <use xlink:href="#textpath"></use>
+        <text x="10" y="50%" fill="white" >
+            <textPath xlink:href="#textpath">
+                IT-ACADEMY
+            </textPath>
+        </text>
+
+
+    </svg>
+</body>
+</html>
